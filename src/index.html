@@ -8,7 +8,27 @@
   <title>TodoMVC</title>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <section class="todoapp">
+			<header class="header">
+				<h1>todos</h1>
+				<input class="new-todo" placeholder="What needs to be done?" autofocus="">
+			</header>
+			<section class="main" style="display: block;">
+				<ul class="todo-list">
+          <li data-id="" class="">
+            <div class="view">
+              <label>un todo</label>
+              <button class="destroy"></button>
+            </div>
+          </li>
+        </ul>
+			</section>
+			<footer class="footer" style="display: block;">
+				<span class="todo-count"><strong>1</strong> item left</span>
+			</footer>
+		</section>
+  </div>
   <script src="main.js" type="module"></script>
 </body>
 </html>
