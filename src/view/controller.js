@@ -1,16 +1,12 @@
+import store from '../controller/store.js';
 import App from './App.js';
 
 /**
- * Renderiza el elemento principal y lo inserta en el DOM
+ * Crea el elemento principal y lo inserta en el DOM dentro del elemeno #root
  */
 export const renderUI = () => {
-  // Por el momento comenzamos con todos estaticos
-  const todos = [
-    {
-      id: 'id',
-      label: 'Un todo',
-    },
-  ];
+  // Obtenemos los todos desde el store
+  const todos = store.get('todos');
 
   const app = App(todos);
 
