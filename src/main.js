@@ -1,3 +1,5 @@
+import { renderUI } from './view/controller.js';
+
 window.addEventListener('load', () => {
-  console.log('aaaaaaaa')
+  renderUI();
 });
