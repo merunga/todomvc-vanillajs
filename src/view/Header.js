@@ -1,10 +1,12 @@
 /**
- * Crea el html de la cabecera
+ * Crea el elemento del DOM de la cabecera
  */
-export default () => (`
-  <header class="header">
+export default () => {
+  const header = document.createElement('header');
+  header.setAttribute('class', 'header');
+  header.innerHTML = `
     <h1>todos</h1>
     <input class="new-todo" placeholder="What needs to be done?" autofocus="">
-  </header>
-  `
-);
+  `;
+  return header;
+};

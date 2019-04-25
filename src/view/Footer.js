@@ -1,10 +1,11 @@
 /**
- * Crea el html del footer
+ * Crea el elemento del dom para el footer
  *
  * @param count Cantidad de todos en la app
  */
-export default count => (
-  `<footer class="footer" style="display: block;">
-    <span class="todo-count"><strong>${count}</strong> todos</span>
-  </footer>`
-);
+export default (count) => {
+  const footer = document.createElement('footer');
+  footer.setAttribute('class', 'footer');
+  footer.innerHTML = `<span class="todo-count"><strong>${count}</strong> todo</span>`;
+  return footer;
+};

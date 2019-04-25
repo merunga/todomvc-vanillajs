@@ -1,7 +1,7 @@
 import App from './App.js';
 
 /**
- * Renderiza el html de la aplicacion
+ * Renderiza el elemento principal y lo inserta en el DOM
  */
 export const renderUI = () => {
   // Por el momento comenzamos con todos estaticos
@@ -12,10 +12,10 @@ export const renderUI = () => {
     },
   ];
 
-  // creamos el HTML en formator string dinamicamente usando los todos
   const app = App(todos);
 
-  // lo insertamos en el elemento #root
   const root = document.getElementById('root');
-  root.innerHTML = app;
+  root.innerHTML = '';
+  // lo insertamos en el elemento #root
+  root.appendChild(app);
 };

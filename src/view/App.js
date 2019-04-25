@@ -9,19 +9,19 @@ import Footer from './Footer.js';
  * @param todos Array de objetos con los todos existentes
  */
 export default (todos) => {
-  // Creamos cada una de las secciones
-  const headerSrc = Header();
-  const todosSrc = Todos(todos);
-  const footerSrc = Footer(todos.length);
+  // Creamos el elemento padre
+  const appElem = document.createElement('section');
+  appElem.setAttribute('class', 'todoapp');
 
-  // Creamos el elemento padre con template string
-  const appSrc = `
-    <section class="todoapp">
-      ${headerSrc}
-      ${todosSrc}
-      ${footerSrc}
-    </section>
-  `;
+  // Creamos cada uno de los elementos hijos
+  const headerElem = Header();
+  const todosElem = Todos(todos);
+  const footerElem = Footer(todos.length);
 
-  return appSrc;
+  // Los insertamos en el padre
+  appElem.appendChild(headerElem);
+  appElem.appendChild(todosElem);
+  appElem.appendChild(footerElem);
+
+  return appElem;
 };
