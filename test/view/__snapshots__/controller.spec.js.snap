@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`View controller renderUI inserta app dentro del elemento #root 1`] = `
+"<section class=\\"todoapp\\"><header class=\\"header\\">
+    <h1>todos</h1>
+    <input class=\\"new-todo\\" placeholder=\\"What needs to be done?\\" autofocus=\\"\\">
+  </header><section class=\\"main\\"><div class=\\"todo-list\\"><li data-id=\\"id\\">
+    <div class=\\"view\\">
+      <label>Un todo</label>
+      <button class=\\"destroy\\"></button>
+    </div>
+  </li></div></section><footer class=\\"footer\\"><span class=\\"todo-count\\"><strong>1</strong> todo</span></footer></section>"
+`;
