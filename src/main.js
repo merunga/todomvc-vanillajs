@@ -4,7 +4,7 @@ import { createStore } from './controller/store.js';
 createStore({
   todos: [
     {
-      id: 'id',
+      id: 1,
       label: 'Un todo desde el store',
     },
   ],
