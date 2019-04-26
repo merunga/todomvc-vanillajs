@@ -1,5 +1,5 @@
 // El estado inicial de la aplicación
-const defaultData = {};
+const defaultData = { todos: [] };
 
 // En esta variable vamos a ir guardando los todos
 let data = {};

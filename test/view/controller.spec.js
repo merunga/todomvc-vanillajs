@@ -3,9 +3,7 @@ import { renderUI } from '../../src/view/controller';
 
 describe('View controller', () => {
   beforeEach(() => {
-    document.body.innerHTML = `
-      <div id="root"></div>
-    `;
+    document.body.innerHTML = '<div id="root"></div>';
   });
   it('renderUI inserta app dentro del elemento #root', () => {
     createStore({

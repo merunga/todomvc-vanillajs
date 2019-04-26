@@ -1,5 +1,7 @@
 import { todoInsertar, todoEliminar } from '../../src/controller/todo';
 
+// cargamos el mock de utils
+// https://jestjs.io/docs/es-ES/manual-mocks#mocking-user-modules
 jest.mock('../../src/controller/utils');
 
 describe('todo controller', () => {
