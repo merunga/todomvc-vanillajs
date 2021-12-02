@@ -9,7 +9,7 @@ describe(Header, () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="root"></div>';
   });
-  it('Ejecuta `todoInsertar` al presionar ENTER', () => {
+  it('Inserta al presionar ENTER', () => {
     createStore(); // inicializamos el store
 
     // Chequeamos que los todos comienzan vacios
@@ -21,7 +21,7 @@ describe(Header, () => {
     inputElem.value = 'todo a insertar'; // lo llenamos con el valor a insertar
     inputElem.dispatchEvent(new Event('focus')); // hacemos foco en el input
     // y "presionamos" ENTER
-    inputElem.dispatchEvent(new KeyboardEvent('keypress', { keyCode: 13 }));
+    inputElem.dispatchEvent(new KeyboardEvent('keypress', { key: 'Enter' }));
 
     todos = store.get('todos'); // Obtenemos de nuevo los todos
     // Y chequeamos que se haya insertado
@@ -35,7 +35,7 @@ describe(Header, () => {
     inputElem.value = ''; // lo dejamos vacio
     inputElem.dispatchEvent(new Event('focus')); // hacemos foco en el input
     // y "presionamos" ENTER
-    inputElem.dispatchEvent(new KeyboardEvent('keypress', { keyCode: 13 }));
+    inputElem.dispatchEvent(new KeyboardEvent('keypress', { key: 'Enter' }));
 
     const todos = store.get('todos'); // Obtenemos de nuevo los todos
     // Y chequeamos que nada se haya insertado
