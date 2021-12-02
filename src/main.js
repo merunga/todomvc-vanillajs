@@ -1,4 +1,4 @@
-import { renderUI } from './view/controller.js';
+import { renderApp } from './view/index.js';
 import { createStore } from './controller/store.js';
 
 createStore({
@@ -11,5 +11,5 @@ createStore({
 });
 
 window.addEventListener('load', () => {
-  renderUI();
+  renderApp();
 });

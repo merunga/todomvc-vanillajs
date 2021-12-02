@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`View controller renderUI inserta app dentro del elemento #root 1`] = `
+exports[`View controller renderApp inserta app dentro del elemento #root 1`] = `
 "<section class=\\"todoapp\\"><header class=\\"header\\">
     <h1>todos</h1>
     <input class=\\"new-todo\\" placeholder=\\"What needs to be done?\\" autofocus=\\"\\">

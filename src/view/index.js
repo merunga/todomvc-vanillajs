@@ -4,7 +4,7 @@ import App from './App.js';
 /**
  * Crea el elemento principal y lo inserta en el DOM dentro del elemeno #root
  */
-export const renderUI = () => {
+export const renderApp = () => {
   // Obtenemos los todos desde el store
   const todos = store.get('todos');
 
