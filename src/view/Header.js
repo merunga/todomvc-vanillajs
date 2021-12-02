@@ -4,7 +4,7 @@ import { renderApp } from './index.js';
 
 export const insertarOnEnter = (evt) => {
   // Es un ENTER ?
-  if (evt.keyCode === 13) {
+  if (evt.key === 'Enter') {
     const label = evt.target.value; // Obtenemos el valor del input
     if (label.trim()) { // si el input no esta vacio
       const todos = store.get('todos'); // Obtenemos los todos actuales
