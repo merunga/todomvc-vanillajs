@@ -1,6 +1,6 @@
 import store from '../controller/store.js';
 import { todoInsertar } from '../controller/todo.js';
-import { renderUI } from './controller.js';
+import { renderApp } from './controller.js';
 
 export const insertarOnEnter = (evt) => {
   // Es un ENTER ?
@@ -11,7 +11,7 @@ export const insertarOnEnter = (evt) => {
       const newTodos = todoInsertar(todos, label); // Insertamos el nuevo todo
       store.set('todos', newTodos); // Lo guardamos en el store
 
-      renderUI(); // Volvemos a pintar la vista para que se reflejen los cambios
+      renderApp(); // Volvemos a pintar la vista para que se reflejen los cambios
       document.querySelector('.new-todo').focus(); // Y volvemos a hacer foco en el input
     }
   }

@@ -1,6 +1,6 @@
 import store from '../controller/store.js';
 import { todoEliminar } from '../controller/todo.js';
-import { renderUI } from './controller.js';
+import { renderApp } from './controller.js';
 
 export const eliminarOnClick = (evt) => {
   // Obtenemos el elemento padre del boton, que engloba al todo
@@ -12,7 +12,7 @@ export const eliminarOnClick = (evt) => {
   const newTodos = todoEliminar(todos, id); // Eliminamos el todo
   store.set('todos', newTodos); // Guardamos el array actualizando en el store
 
-  renderUI(); // Volvemos a pintar la vista para que se reflejen los cambios
+  renderApp(); // Volvemos a pintar la vista para que se reflejen los cambios
 };
 
 /**

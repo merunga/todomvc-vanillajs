@@ -1,15 +1,5 @@
-import { renderUI } from './view/controller.js';
-import { createStore } from './controller/store.js';
-
-createStore({
-  todos: [
-    {
-      id: 1,
-      label: 'Un todo desde el store',
-    },
-  ],
-});
+import { renderApp } from './app.js';
 
 window.addEventListener('load', () => {
-  renderUI();
+  renderApp();
 });
