@@ -25,7 +25,7 @@ export const renderApp = () => {
   // Le asignamos una acccion al evento de 'tecla presionada'
   inputElem.addEventListener('keypress', (evt) => {
     // Es un ENTER ?
-    if (evt.keyCode === 13) {
+    if (evt.key === 'Enter') {
       const label = evt.target.value; // Obtenemos el valor del input
       if (label.trim()) { // si el input no esta vacio
         // Insertamos el nuevo todo
