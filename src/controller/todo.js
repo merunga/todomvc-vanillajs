@@ -22,5 +22,5 @@ export const todoInsertar = (todos, label) => {
  * @param {*} id Id del todo a eliminar
  */
 export const todoEliminar = (todos, id) => (
-  todos.filter(t => t.id !== id)
+  todos.filter((t) => t.id !== id)
 );
