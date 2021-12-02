@@ -44,7 +44,7 @@ export const renderApp = () => {
     }
   });
 
-  // LISTA
+  // LISTA DE TODOS
   const todosElem = document.createElement('section');
   todosElem.setAttribute('class', 'main');
 
